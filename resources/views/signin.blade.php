@@ -113,7 +113,7 @@
                                             <input type="checkbox" class="custom-control-input" id="customCheck1">
                                             <label class="custom-control-label" for="customCheck1">Remember Me</label>
                                         </div>
-                                        <a href="#" class="text-primary">Forgot Password?</a>
+                                        {{-- <a href="#" class="text-primary">Forgot Password?</a> --}}
                                     </div>
                                     <button type="submit" class="btn btn-primary btn-block">Sign In</button>
                                 </form>
@@ -186,7 +186,7 @@
                                 input.addClass("is-invalid");
                                 input.after(
                                     `<div class="invalid-feedback">${errors[field][0]}</div>`
-                                    );
+                                );
                             }
                         } else {
                             showDatumAlert('danger', xhr.responseJSON?.message ||
