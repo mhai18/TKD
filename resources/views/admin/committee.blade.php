@@ -26,7 +26,7 @@
                         <td>{{ $committee->id }}</td>
 
                         <td>
-                            <img src="{{ $committee->user->getFirstMediaUrl('avatar', 'thumbnail') ?: asset('assets/images/user/.jpg') }}"
+                            <img src="{{ $committee->user->getFirstMediaUrl('avatar', 'thumbnail') ?: asset('assets/images/user/1.jpg') }}"
                                 alt="Avatar" class="rounded-circle" style="width: 50px; height: 50px; object-fit: cover;">
                         </td>
 
