@@ -1,4 +1,7 @@
 @extends('layout.master')
+@section('APP-TITLE')
+    Bracket
+@endsection
 @section('APP-CSS')
     <style>
         .winner-glow {

@@ -2,6 +2,9 @@
 @section('chapter')
     active
 @endsection
+@section('APP-TITLE')
+    Chapter
+@endsection
 @section('APP-CONTENT')
     <div class="table-responsive">
         <div class="text-right mb-3">

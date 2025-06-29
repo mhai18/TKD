@@ -2,6 +2,9 @@
 @section('kyorugi')
     active
 @endsection
+@section('APP-TITLE')
+    Add Kyorugi
+@endsection
 @section('APP-CONTENT')
     <div class="mb-4">
         <button type="button" class="btn btn-md btn-primary" onclick="goBack()">Go Back</button>

@@ -17,7 +17,9 @@ class CoachController extends Controller
     public function dashboard()
     {
         $chapter = auth()->user()->chapter;
-        return view('coach.dashboard', compact('chapter'));
+        $chapters = \App\Models\Chapter::where('coach_id', auth()->user()->id)->get();
+        $selectedChapter = $chapters->find(request()->query('chapter_id'));
+        return view('coach.dashboard', compact('chapters', 'selectedChapter'));
     }
 
     public function player()
@@ -42,11 +44,20 @@ class CoachController extends Controller
 
     public function chapter()
     {
-        $chapter = Chapter::where('coach_id', auth()->user()->id)->first();
-        if ($chapter === null) {
+        $chapters = Chapter::where('coach_id', auth()->user()->id)->get();
+
+        if ($chapters->isEmpty()) {
             return redirect()->back()->withErrors(['error' => 'You do not have a chapter assigned.']);
         }
-        return view('coach.chapter', compact('chapter'));
+
+        $chapterId = request()->query('chapter_id');
+        $selectedChapter = $chapterId ? $chapters->find($chapterId) : $chapters->first();
+
+        if (!$selectedChapter) {
+            return redirect()->back()->withErrors(['error' => 'Selected chapter not found.']);
+        }
+
+        return view('coach.chapter', compact('chapters', 'selectedChapter'));
     }
 
     public function coachProfile()

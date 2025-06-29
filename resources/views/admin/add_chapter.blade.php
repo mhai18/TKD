@@ -2,6 +2,9 @@
 @section('chapter')
     active
 @endsection
+@section('APP-TITLE')
+    Add Chapter
+@endsection
 @section('APP-CONTENT')
     <form id="addForm" class="card-content needs-validation" novalidate>
         <div class="card">

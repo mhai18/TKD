@@ -2,6 +2,9 @@
 @section('kyorugiPlayer')
     active
 @endsection
+@section('APP-TITLE')
+    Kyorugi View Player
+@endsection
 @section('APP-CONTENT')
     <div class="table-responsive">
         @if (!$hasMatches)

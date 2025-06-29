@@ -2,6 +2,9 @@
 @section('committee')
     active
 @endsection
+@section('APP-TITLE')
+    Committee
+@endsection
 @section('APP-CONTENT')
     <div class="table-responsive">
         <div class="text-right mb-3">

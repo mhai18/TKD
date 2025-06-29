@@ -1,7 +1,7 @@
 <nav class="iq-sidebar-menu">
     <ul id="iq-sidebar-toggle" class="side-menu">
-        <li class=" sidebar-layout">
-            <a href="#" class="svg-icon">
+        <li class=" sidebar-layout @yield('dashboard')">
+            <a href="{{ route('adminDashboard') }}" class="svg-icon">
                 <i class="">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">

@@ -13,7 +13,8 @@ class NavigationController extends Controller
 {
     public function dashboard()
     {
-        return view('player.dashboard');
+        $player = \App\Models\Player::where('user_id', auth()->user()->id)->with(['user', 'chapter.coach'])->first();
+        return view('player.dashboard', compact('player'));
     }
 
     public function chapter()

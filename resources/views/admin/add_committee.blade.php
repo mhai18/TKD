@@ -2,6 +2,9 @@
 @section('committee')
     active
 @endsection
+@section('APP-TITLE')
+    Add Committee
+@endsection
 @section('APP-CONTENT')
     <form id="addForm" class="card-content needs-validation" novalidate>
         <div class="card">

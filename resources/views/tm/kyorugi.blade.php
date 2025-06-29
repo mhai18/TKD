@@ -2,6 +2,9 @@
 @section('kyorugi')
     active
 @endsection
+@section('APP-TITLE')
+    Kyorugi
+@endsection
 @section('APP-CONTENT')
     <div class="table-responsive">
         <div class="text-right mb-3">

@@ -2,6 +2,9 @@
 @section('chapter')
     active
 @endsection
+@section('APP-TITLE')
+    Edit Chapter
+@endsection
 @section('APP-CONTENT')
     <form id="updateForm" class="card-content needs-validation" novalidate data-id="{{ $chapter->id }}">
         <div class="card">

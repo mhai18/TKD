@@ -2,6 +2,9 @@
 @section('player')
     active
 @endsection
+@section('APP-TITLE')
+    Player
+@endsection
 @section('APP-CONTENT')
     <form id="updateForm" class="card-content needs-validation" novalidate data-id="{{ $player->id }}">
         <input type="hidden" id="chapter_id" name="chapter_id" value="{{ auth()->user()->chapter->id ?? '' }}">

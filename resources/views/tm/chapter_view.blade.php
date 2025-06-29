@@ -3,7 +3,7 @@
     active
 @endsection
 @section('APP-TITLE')
-    {{ $chapter->chapter_name }} | Coach
+    {{ $chapter->chapter_name }} | Tournament Manager
 @endsection
 @section('APP-CSS')
     <style>

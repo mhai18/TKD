@@ -2,6 +2,9 @@
 @section('kyorugi')
     active
 @endsection
+@section('APP-TITLE')
+    Edit Kyorugi
+@endsection
 @section(section: 'APP-CONTENT')
     <div class="mb-4">
         <button type="button" class="btn btn-md btn-primary" onclick="goBack()">Go Back</button>
@@ -90,7 +93,7 @@
                     </div>
 
                     <div class="form-group col-sm-3">
-                        <label for="end_date">End Date:</label>
+                        <label for="end_date">End Date: {{ $tournament->end_date }}</label>
                         <input type="date" class="form-control" name="end_date" id="end_date"
                             value="{{ $tournament->end_date }}">
                         <div class="invalid-feedback">End Date is required.</div>

@@ -2,6 +2,9 @@
 @section('event')
     active
 @endsection
+@section('APP-TITLE')
+    Category
+@endsection
 @section('APP-CONTENT')
     <div class="table-responsive">
         <div class="text-right mb-3">

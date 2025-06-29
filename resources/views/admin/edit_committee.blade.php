@@ -2,6 +2,9 @@
 @section('committee')
     active
 @endsection
+@section('APP-TITLE')
+    Edit Committee
+@endsection
 @section('APP-CONTENT')
     <form id="updateForm" class="card-content needs-validation" novalidate data-id="{{ $committee->id }}">
         <div class="card">

@@ -2,6 +2,9 @@
 @section('schedule')
     active
 @endsection
+@section('APP-TITLE')
+    Player Schedule
+@endsection
 @section('APP-CONTENT')
     <div class="row">
         <div class="col-md-12">

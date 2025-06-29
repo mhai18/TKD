@@ -2,6 +2,9 @@
 @section('chapter')
     active
 @endsection
+@section('APP-TITLE')
+    Player View
+@endsection
 @section('APP-CONTENT')
     <div class="col-lg-12 mb-4">
         <button type="button" class="btn btn-md btn-primary" onclick="goBack()">Go Back</button>

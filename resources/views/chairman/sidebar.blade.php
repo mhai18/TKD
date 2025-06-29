@@ -1,7 +1,7 @@
 <nav class="iq-sidebar-menu">
     <ul id="iq-sidebar-toggle" class="side-menu">
-        <li class=" sidebar-layout">
-            <a href="#" class="svg-icon">
+        <li class=" sidebar-layout @yield('dashboard')">
+            <a href="{{ route('chairmanDashboard') }}" class="svg-icon">
                 <i class="">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
@@ -10,7 +10,6 @@
                     </svg>
                 </i>
                 <span class="ml-2">Dashboard</span>
-                <p class="mb-0 w-10 badge badge-pill badge-primary">6</p>
             </a>
         </li>
         <li class="px-3 pt-3 pb-2">
